@@ -34,9 +34,9 @@ brew install mas
 # NVM
 brew install nvm
 mkdir ~/.nvm
-echo 'export NVM_DIR="$HOME/.nvm"' >> .bash_profile
-echo '. "/usr/local/opt/nvm/nvm.sh"' >> .bash_profile
-echo '' >> .bash_profile
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bash_profile
+echo '. "/usr/local/opt/nvm/nvm.sh"' >> ~/.bash_profile
+echo '' >> ~/.bash_profile
 
 
 # Xcode
@@ -75,16 +75,16 @@ mas install 803453959
 brew tap caskroom/cask
 brew tap caskroom/versions
 
-echo '' >> .bash_profile
-echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> .bash_profile
-echo 'alias cask="brew cask"' >> .bash_profile
+echo '' >> ~/.bash_profile
+echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.bash_profile
+echo 'alias cask="brew cask"' >> ~/.bash_profile
 source ~/.bash_profile
 
 cask install java8
 
 cask install android-sdk
-echo 'export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"' >> .bash_profile
-echo '' >> .bash_profile
+echo 'export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"' >> ~/.bash_profile
+echo '' >> ~/.bash_profile
 source ~/.bash_profile
 
 cask install appcleaner
@@ -98,7 +98,7 @@ open -a RescueTime
 
 cask install charles
 
-cask insatll docker
+cask install docker
 
 cask install android-studio
 
